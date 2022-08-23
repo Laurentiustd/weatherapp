@@ -94,3 +94,9 @@ button:hover{
         margin-left: 0;
     }
 }
+
+@media screen and (max-height:700px){
+    body{
+        font-size: 80%;
+    }
+}
