@@ -19,7 +19,7 @@ body{
     color: white;
     display: flex;
     width: 50vw;
-    height: 70vh;
+    min-height: 70vh;
     border-radius: 30px;
     align-items: center;
     justify-content: center;
