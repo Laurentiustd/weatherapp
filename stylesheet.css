@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Open Sans', sans-serif;
+    background-image: url('https://source.unsplash.com/1920x1080/?landscape');
+    font-size: 120%;
+}
+
+.container{
+    background-color: #292C35;
+    color: white;
+    display: flex;
+    width: 50vw;
+    height: 70vh;
+    border-radius: 30px;
+    align-items: center;
+    justify-content: center;
+    opacity: .8;
+}
+
+.search{
+    position: absolute;
+    display: flex;
+    align-self: flex-start;
+    padding: 2em;
+    height: fit-content;
+}
+
+.search input{
+    padding: 1.5em;
+    background-color: black;
+    border-radius: 10px;
+    height: 4em;
+    width: 36vw;
+    color:white;
+    font-size: .8em;
+}
+
+.search button{
+    background-color: #292C35;
+    color: white;
+    padding: .5em;
+    font-size: 1.5em;
+    margin-left: .5em;
+    border: 0;
+}
+
+button:hover{
+    cursor: pointer;
+}
+.weather{
+    gap: .5em;
+    display: flex;
+    flex-direction: column;
+    padding: 2em;
+    height: fit-content;
+    width: 100vw;
+
+}
+
+.status{
+    display: flex;
+    align-items: center;
+}
+
+
+@media screen and (max-width:500px) {
+    body{
+        font-size: 100%;
+    }
+
+    .container{
+        width: 90vw;
+        height: 55vh;
+    }
+
+    .weather{
+        padding-top: 5em;
+    }
+
+    .search input{
+       width: 70vw;
+    }
+
+    .search button{
+        margin-left: 0;
+    }
+}
